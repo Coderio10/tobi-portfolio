@@ -1,12 +1,12 @@
-import ArtGallery from '../assets/art-gallery.png'
-import Socialite from '../assets/sociolite.png'
+import ArtGallery from '../assets/art-gallery.png';
+import Socialite from '../assets/sociolite.png';
 
-type Project = {
-    id: number,
-    title: string,
-    category: string,
-    image: string
-}
+export type Project = {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+};
 
 export const projects: Project[] = [
     {

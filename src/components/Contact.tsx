@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Github, Send } from 'lucide-react';
+import contactImage from '../assets/contact-img.png';
 
 // Contact Page Component
 const ContactPage = () => {
@@ -34,7 +35,7 @@ const ContactPage = () => {
     <>
       <section className="pt-32 pb-20 px-6 bg-gradient-to-br from-stone-100 to-stone-200">
         <div className="max-w-6xl mx-auto text-center">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop" alt="Contact" className="w-48 h-48 rounded-full mx-auto mb-8 shadow-2xl" />
+          <img src={contactImage} alt="Contact" className="w-48 h-48 rounded-full object-cover mx-auto mb-8 shadow-2xl" />
           <h1 className="text-6xl md:text-7xl font-bold text-stone-900 mb-6">Let's work<br />together</h1>
           <p className="text-xl text-stone-600 max-w-2xl mx-auto">Have a project in mind? Let's collaborate to create something extraordinary.</p>
         </div>

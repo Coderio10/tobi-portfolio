@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Logo from '../assets/logo 2.png';
 
 type NavigationProps = {
     currentPage: string;
@@ -10,8 +11,12 @@ const Navigation = ({ currentPage, setCurrentPage }: NavigationProps ) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-stone-100/80 backdrop-blur-md border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <button onClick={() => setCurrentPage('home')} className="text-2xl font-serif tracking-wider hover:text-stone-600 transition">
-          THE
+        <button onClick={() => setCurrentPage('home')}>
+          <img
+          src={Logo}
+          alt="Logo"
+          className="w-[56px]"
+          />
         </button>
         {/* Hamburger for mobile */}
         <button className="sm:hidden flex flex-col gap-1.5 p-2 relative z-20" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">

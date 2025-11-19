@@ -1,6 +1,7 @@
 import React from 'react';
 import image1 from '../assets/oladimeji.png'
 import image2 from '../assets/demilade.png'
+import bg from '../assets/About-bg.png'
 
 const AboutPage: React.FC = () => {
   const testimonials = [
@@ -21,11 +22,11 @@ const AboutPage: React.FC = () => {
   return (
     <>
       {/* Hero Section - Split Screen */}
-      <section className="pt-20 min-h-screen flex">
+      <section className="min-h-screen flex">
         {/* Left Side - Image */}
         <div className="w-1/2 bg-stone-300 relative">
           <img 
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&h=1600&fit=crop" 
+            src={bg} 
             alt="Oluwatobi Oyesola"
             className="w-full h-full object-cover"
           />
@@ -83,11 +84,11 @@ const AboutPage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12">
             {testimonials.map((testimonial, idx) => (
               <div key={idx} className="bg-white p-10 rounded-3xl shadow-sm relative">
-                <div className="flex items-start gap-6 mb-6">
+                <div className="flex items-start gap-6 mb-3">
                   <img 
                     src={testimonial.image} 
                     alt={testimonial.name}
-                    className="w-24 h-24 rounded-full object-cover flex-shrink-0"
+                    className="w-16 h-16 rounded-full object-cover flex-shrink-0"
                   />
                   <div className="flex-1">
                     <h4 className="text-xl font-bold text-stone-900">{testimonial.name}</h4>

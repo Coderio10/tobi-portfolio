@@ -1,18 +1,13 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import HeroBG from '../assets/bg.png'
-import btnImg from '../assets/btnimg.png'
+import HeroBG from '../assets/bg.png';
+import btnImg from '../assets/btnimg.png';
 import { projects } from '../Data/portfolioData';
+import type { Project } from '../Data/portfolioData';
+import contactImage from '../assets/contact-img.png';
 
 interface HomePageProps {
   setCurrentPage: (page: string) => void;
-}
-
-type Project = {
-    id: Number | null | undefined;
-    title: string,
-    category: string,
-    image: string
 }
 
 const HomePage: React.FC<HomePageProps> = ({ setCurrentPage }) => {
@@ -131,14 +126,14 @@ const HomePage: React.FC<HomePageProps> = ({ setCurrentPage }) => {
 
       {/* Contact Section */}
       <section className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-6xl mx-auto p-[8px]">
+          <div className="grid md:grid-cols-2 items-center">
             {/* Left - Profile Image */}
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-end md:justify-start">
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=500&fit=crop" 
+                src={contactImage} 
                 alt="Contact"
-                className="w-80 h-80 rounded-full object-cover shadow-xl"
+                className="w-auto h-auto  object-contain "
               />
             </div>
 
