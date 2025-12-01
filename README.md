@@ -5,8 +5,8 @@ A modern, responsive portfolio website built with React, TypeScript, and Vite. T
 ## 🔗 Links
 
 - **Live Site**: [View Live](https://theoyesolaoluwatobi.netlify.app/)
-- **Client**: Oyesola Oluwatobi [Last Name]
-- **Role**: [Product Designer]
+- **Client**: Oyesola Oluwatobi
+- **Role**: Product Designer
 
 ## 📋 Project Overview
 
